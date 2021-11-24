@@ -1,3 +1,3 @@
-$VMName = "windows"
-Get-ChildItem "D:\packer\$VMName\Virtual Machines\*.vmcx" | Import-VM -Copy -VhdDestinationPath "D:\VirtualMachines\$VMName\Virtual Hard Disks" -VirtualMachinePath "D:\VirtualMachines\$VMName" -GenerateNewId
+$VMName = "debian"
+Get-ChildItem "C:\packer\$VMName\Virtual Machines\*.vmcx" | Import-VM -Copy -VhdDestinationPath "C:\VirtualMachines\$VMName\Virtual Hard Disks" -VirtualMachinePath "C:\VirtualMachines\$VMName" -GenerateNewId
 Start-VM $VMName
